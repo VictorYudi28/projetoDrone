@@ -1,0 +1,177 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-site-prin: #BE8845;
+    --color-site-black: #000;
+    --color-site-white: #FFF;
+    --color-site-white-2: #F8F9FA;
+    --color-site-prin-hover: #916837;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-site-prin);
+}
+
+/* Widget */
+
+.active-menu{
+    border-bottom: 2px solid #BE8845 !important;
+}
+
+/* Classes JS */
+
+.none{
+    display: none;
+}
+
+.border-bottom-menu{
+    border-bottom: 1px solid #BE8845;
+}
+
+/* Header */
+
+.links-menu {
+    color: var(--color-site-white) !important;
+}
+
+.links-menu:hover {
+    color: var(--color-site-prin) !important;
+}
+
+.transition {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+nav {
+    background-color: var(--color-site-black);
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
+
+.icon-menu {
+    font-size: 40px !important;
+    color: var(--color-site-white);
+}
+
+.nav-link {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--color-site-prin);
+}
+
+.h-100 {
+    min-height: 80px !important;
+}
+
+/* Section Banner */
+
+.btn {
+    border: 1px solid var(--color-site-prin);
+}
+
+.btn:hover {
+    color: var(--color-site-white);
+    background-color: var(--color-site-prin);
+}
+
+.section-banner article p {
+    width: 90%;
+}
+
+/* Section bg site */
+
+.section-bg-site {
+    background-color: var(--color-site-prin);
+}
+
+.section-bg-site p {
+    width: 80%;
+    margin-bottom: 0 !important;
+}
+
+/* Section cards */
+
+.card {
+    box-shadow: 1px 1px 20px #CCC;
+}
+
+.card img {
+    height: 210px;
+    object-fit: cover;
+}
+
+.card .btn {
+    border: 0;
+    background-color: var(--color-site-prin);
+}
+
+.card .btn:hover {
+    border: 0;
+    background-color: var(--color-site-prin-hover);
+}
+
+
+/* Section Banner */
+
+.section-banner {
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+        url('../images/banner-prin.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-banner .container h1{
+    color: var(--color-site-white);
+}
+
+.section-banner .container button{
+    color: var(--color-site-white);
+    border: 1px solid var(--color-site-white);
+}
+
+.section-banner .container button:hover{
+    background-color: transparent;
+}
+
+/* Footer */
+
+.cont-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.cont-footer p{
+    margin-bottom: 0;
+}
+
+.icon-social{
+    font-size: 35px;
+    color: var(--color-site-prin) !important;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+}
+
+@media(max-width: 992px) {
+
+    .nav-link {
+        width: 20% !important;
+    }
+
+}
