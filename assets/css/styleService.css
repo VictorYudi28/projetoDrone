@@ -12,8 +12,13 @@
 
 /* Section service */
 
+.section-services{
+    min-height: 70vh;
+}
+
 .line{
     max-width: 50px;
     height: 2px;
     background-color: var(--color-site-prin);
 }
+

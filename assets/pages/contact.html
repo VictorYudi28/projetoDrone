@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drone VZ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/styleContact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300&family=Roboto:wght@100&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container h-100 py-3">
+                <a class="fs-2 fw-bold navbar-brand links-menu transition" href="/index.html">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list icon-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse show justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav gap-4">
+                        <a class="nav-link links-menu fs-5" href="/index.html">Home</a>
+                        <a class="nav-link links-menu fs-5" href="./service.html">Serviços</a>
+                        <a class="nav-link links-menu fs-5" href="./product.html">Produtos</a>
+                        <a class="nav-link links-menu active-menu fs-5" href="./contact.html">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container pt-5">
+        <section class="section-contact">
+            <div class="title-contact">
+                <h1 class="text-center fw-bold">Contato</h1>
+                <div class="text-center line mt-3 ms-auto me-auto"></div>
+            </div>
+            <div class="contact-cont mt-5 row justify-content-center mb-4">
+
+                <address class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="title-contact-name">
+                        <h2 class="display-6 title-drone-vz">Drone VZ</h2>
+                    </div>
+                    <div class="social-contact d-flex gap-2">
+                        <a href="">
+                            <i class="bi bi-instagram icon-social"></i>
+                        </a>
+                        <a href="">
+                            <i class="bi bi-whatsapp icon-social"></i>
+                        </a>
+                    </div>
+                </address>
+                <form action="https://formsubmit.co/f20ff274cbfaa9368a68c75a4b72333b" method="POST" class="col-md-6 d-flex flex-column gap-3 rounded">
+
+                    <div class="d-flex flex-column gap-2 container-inputs">
+                        <label for="nomeText">Nome: </label>
+                        <input class="rounded" name="Nome" type="text" id="nomeText" placeholder="Ex: Vinicius " required>
+                    </div>
+                    <div class="d-flex flex-column gap-2 container-inputs">
+                        <label for="emailText">Email: </label>
+                        <input class="rounded" name="E-mail" type="email" id="emailText" placeholder="Ex: vinicius.vz@gmail.com" required>
+                    </div>
+                    <div class="d-flex flex-column gap-2 container-inputs">
+                        <label for="tel">Telefone: </label>
+                        <input class="rounded" name="Telefone" type="tel" id="Tel" placeholder="Ex: 11945432312" required>
+                    </div>
+                    <div class="d-flex flex-column gap-2 container-inputs">
+                        <label for="mensagem">Mensagem: </label>
+                        <textarea class="rounded" name="Mensagem" cols="25" rows="10" placeholder="Mensagem..."></textarea>
+                    </div>
+
+                    <button class="btn btn-form">Enviar</button>
+
+                    <input type="hidden" name="_subject" value="Novo contato !!">
+                    <input class="input-honey" type="text" name="_honey">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

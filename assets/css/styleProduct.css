@@ -1,0 +1,19 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-site-prin: #BE8845;
+    --color-site-black: #000;
+    --color-site-white: #FFF;
+    --color-site-white-2: #F8F9FA;
+    --color-site-prin-hover: #916837;
+}
+
+/* Section Product */
+
+.line{
+    max-width: 50px;
+    height: 2px;
+    background-color: var(--color-site-prin);
+}

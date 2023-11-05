@@ -34,6 +34,15 @@
     border-bottom: 1px solid #BE8845;
 }
 
+.scale{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.scale:hover{
+    transform: scale(1.05);
+}
+
 /* Header */
 
 .links-menu {
@@ -126,7 +135,7 @@ nav {
 .section-banner {
     min-height: 80vh;
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
-        url('../images/banner-prin.jpg');
+        url('../images/imagesIndex/banner.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

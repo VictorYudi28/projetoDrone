@@ -1,0 +1,53 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-site-prin: #BE8845;
+    --color-site-black: #000;
+    --color-site-white: #FFF;
+    --color-site-white-2: #F8F9FA;
+    --color-site-prin-hover: #916837;
+}
+
+/* Section Thanks */
+
+body{
+    background-color: #EEE;
+}
+
+.container{
+    height: 100vh !important;
+}
+
+.voltar a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--color-site-black);
+}
+
+.voltar p{
+    margin: 0;
+}
+
+.arrow{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mensagem , .image{
+    display: flex;
+    justify-content: center;
+}
+
+.mensagem{
+    flex-direction: column;
+    justify-content: start;
+}
+
+.imagem-email{
+    font-size: 8rem !important;
+    color: green;
+}
