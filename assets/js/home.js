@@ -1,11 +1,11 @@
-// Objetos Product
+// Objetos cards principal
 
-const objetosCardsProduct = [
+const objetosCardsHome = [
 
     {
         imagem: "drone1.jpg",
         altImagem: 'Imagem de um drone voando',
-        tituloH: "Drone",
+        tituloH: "Lorem Ipsum",
         textoP:
             " Some quick example text to build on the card title and make up the bulk of the cards content.",
         btnLink: "#",
@@ -13,8 +13,8 @@ const objetosCardsProduct = [
 
     {
         imagem: "drone2.jpg",
-        altImagem: 'Imagem de um um drone voando',
-        tituloH: "Drone",
+        altImagem: 'Imagem de um drone voando',
+        tituloH: "Lorem Ipsum",
         textoP:
             " Some quick example text to build on the card title and make up the bulk of the cards content.",
         btnLink: "#",
@@ -23,56 +23,47 @@ const objetosCardsProduct = [
     {
         imagem: "drone3.jpg",
         altImagem: 'Imagem de um drone voando',
-        tituloH: "Drone",
+        tituloH: "Lorem Ipsum",
         textoP:
             " Some quick example text to build on the card title and make up the bulk of the cards content.",
         btnLink: "#",
-    },  
-    
+    },
+
     {
         imagem: "drone4.jpg",
         altImagem: 'Imagem de um drone voando',
-        tituloH: "Drone",
+        tituloH: "Lorem Ipsum",
         textoP:
             " Some quick example text to build on the card title and make up the bulk of the cards content.",
         btnLink: "#",
-    },    
+    },
 
-    {
-        imagem: "drone5.jpg",
-        altImagem: 'Imagem de um drone voando',
-        tituloH: "Drone",
-        textoP:
-            " Some quick example text to build on the card title and make up the bulk of the cards content.",
-        btnLink: "#",
-    }  
+]
 
-];
+const sectionCardsElement = document.querySelector('.section-cards-cont');
 
-const productCont = document.querySelector('.product-cont');
-
-objetosCardsProduct.forEach((objetoCard) => {
-
-    productCont.innerHTML += `
+objetosCardsHome.forEach( objetoCard => {
     
-    <div class="col-md-6 col-lg-4 p-2">
+    sectionCardsElement.innerHTML += `
+    
+    <div class="col-md-6 col-lg-3 p-2">
         <div class="card">
-            <img src="../images/imagesIndex/${objetoCard.imagem}" class="card-img-top" alt="${objetoCard.altImagem}">
+            <img src="/assets/images/imagesIndex/${objetoCard.imagem}" class="card-img-top" alt="${objetoCard.altImagem}">
             <div class="card-body">
                 <h5 class="card-title">${objetoCard.tituloH}</h5>
                 <p class="card-text">
                     ${objetoCard.textoP}
                 </p>
-                <a href="${objetoCard.btnLink}" class="btn btn-primary">Comprar</a>
+                <a href="${objetoCard.btnLink}" class="btn btn-primary">Saiba mais</a>
             </div>
         </div>
     </div>
 
     `
 
-})
+});
 
-const cards = productCont.querySelectorAll('.card')
+const cards = sectionCardsElement.querySelectorAll('.card')
 
 cards.forEach((card) => {
 
