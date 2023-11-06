@@ -48,7 +48,7 @@ objetosCardsHome.forEach( objetoCard => {
     
     <div class="col-md-6 col-lg-3 p-2">
         <div class="card">
-            <img src="/assets/images/imagesIndex/${objetoCard.imagem}" class="card-img-top" alt="${objetoCard.altImagem}">
+            <img src="../images/imagesIndex/${objetoCard.imagem}" class="card-img-top" alt="${objetoCard.altImagem}">
             <div class="card-body">
                 <h5 class="card-title">${objetoCard.tituloH}</h5>
                 <p class="card-text">
